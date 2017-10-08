@@ -1,0 +1,12 @@
+doctype xml
+urlset(xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
+    url
+        loc #{url}/
+        - var date = new Date();
+        lastmod= date.toISOString()
+        priority 0.5
+    url
+        loc #{url}/about/
+        - var date = new Date();
+        lastmod= date.toISOString()
+        priority 0.5

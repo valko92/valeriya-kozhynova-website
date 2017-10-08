@@ -1,0 +1,23 @@
+# Ignore hidden folders #
+# This takes care of .tmp, .sass-cache, and many others #
+.*/
+
+# Ignore OS generated files #
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Ignore IDE files #
+.vscode
+
+# Ignore npm/bower package folders #
+/node_modules
+/vendor/*
+
+# Ignore the build folder
+/build
+/build/**/*
+
+robots.txt
+yarn-error.log

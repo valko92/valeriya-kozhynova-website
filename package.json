@@ -1,0 +1,32 @@
+{
+  "name": "gulp4-pug-boilerplate",
+  "version": "1.0.0",
+  "description": "starter project for static sites using gulp4 and pug",
+  "main": "index.js",
+  "author": "Valeriya Kozhynova, DBXD",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-minify-inline": "^1.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "sanitize.scss": "^1.0.0"
+  },
+  "scripts": {
+    "preinstall": "npm install -g git+https://git@github.com/gulpjs/gulp.git#4.0 gulp-cli",
+    "tasks": "gulp --tasks",
+    "build": "gulp --env=prod",
+    "start": "gulp --env=dev serve",
+    "test": "echo 'need proper testing'"
+  }
+}
