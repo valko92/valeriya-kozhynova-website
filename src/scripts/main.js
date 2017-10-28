@@ -1,1 +1,5 @@
-console.log('javascript ready');
+$(document).ready(function() {
+    console.log('javascript ready');
+
+    $(".button-collapse").sideNav();
+});

@@ -1,9 +1,20 @@
-header
-    a.title(href="/") Valeriya<br/>Kozhynova
-    ul.nav-wrapper
-        li.nav-item.sub-text 
-            a(href="/about/") About
-        li.nav-item.sub-text 
-           a(href="/skills/") Skills
-        li.nav-item.sub-text 
-            a(href="/projects/") Projects
+.navbar-fixed
+    nav
+        .nav-wrapper
+            a.brand-logo(href="/") Logo
+            a.button-collapse(href="#", data-activates="mobile-demo")
+                i.material-icons menu
+            ul.right.hide-on-med-and-down
+                li
+                    a(href="/about/") About
+                li
+                    a(href="/skills/") Skills
+                li
+                    a(href="/projects/") Projects
+            ul#mobile-demo.side-nav
+                li
+                    a(href="/about/") About
+                li
+                    a(href="/skills/") Skills
+                li
+                    a(href="/projects/") Projects

@@ -1,42 +1,7 @@
 @import './node_modules/sanitize.scss/_sanitize.scss';
 
-/** Vars */
-$maincolor: #CC5837;
-$maincolor2: #FF7A2C;
-$secondarycolor: #3D5199;
-$secondarycolor2: #34CAFF;
-$backgroundcolor: #fff;
-
-
-html,
-body {
-  height:100%;
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  width:100%;
-  background-color: $backgroundcolor;
-}
-
-a {
-  text-decoration: none;
-  color: $secondarycolor;
-}
-
-a:hover {
-  opacity: 0.85;
-}
-
-a:active {
-  opacity: 0.65;
-}
-
-.content-wrapper {
-  padding: 2em;
-}
 
 /** Imports */
-@import '_typography';
+@import 'materialize';
 @import '_home';
 @import '_header';
