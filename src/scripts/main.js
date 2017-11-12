@@ -23,17 +23,19 @@ $(document).ready(function() {
             }
         }, stepTime);
     }
+
+    // TODO:  Cycle thru a fixed number of random letters for all of them
     $('.changing-text span').each(function(i, v) {
         var currentLet = $(this).html();  
         var $this = $(this);
         var range = 25;
         var current = currentLet === 'A' ? 25: -1;
         var increment = range > current? 1 : -1;
-        var stepTime = Math.abs(Math.floor(2000 / range));
+        var stepTime = Math.abs(Math.floor(3000 / range));
         // initial cycle
         setTimeout(function() {
             cycle($this, current, increment, alphabet, currentLet, stepTime);
-        }, 200*i);
+        }, 800*i);
 
         //loop cycle on hover
         $(this).on('mouseover', function() {
