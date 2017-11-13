@@ -56,6 +56,12 @@ $(document).ready(function() {
     });
 });
 
+// on mobile orientation change, reload
+$(window).on('orientationchange', function() {
+    location.reload();
+});
+
+
 // on scroll - see when body reaches top to slide down header
 $(document).on('scroll', function () {
     var $nav = $('.navbar-fixed nav');

@@ -1,6 +1,6 @@
 .navbar-fixed.custom-navbar {
     nav {
-        padding: 0 3em;
+        padding: 0 1em;
         transition: opacity 400ms ease-in-out, transform 300ms ease-in 200ms;
         @extend .purple, .lighten-2;
         &.slidedown {
@@ -12,7 +12,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             @media (max-width: 992px) {
-                left: calc(100% - 3em);
+                left: calc(100% - 2em);
                 transform: translateX(0%);
             }
             .desktop {
@@ -33,38 +33,49 @@
         ul {
             .rainbow {
                 position: absolute;
-                top: 60px;
+                top: 25px;
                 left: 0;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                height: 9;
+                height: 31px;
+                @media (min-width: 480px) and (max-width: 767px) {
+                    top: 35px;
+                }
                 .rain-color-1 {
                     width: 100%;
                     height: 9px;
-                    @extend .orange, .accent-3;
+                    @extend .amber, .accent-4;
                 }
                 .rain-color-2 {
                     width: 100%;
                     height: 9px;
-                    background-color: #9C43AB;
+                    @extend .purple, .lighten-2;
                     
                 }
                 .rain-color-3 {
                     width: 100%;
-                    height: 9px;
-                   background-color: #D696E1;
+                    height: 3px;
+                   background-color: #000;
                 }
                 .rain-color-4 {
                     width: 100%;
                     height: 9px;
-                   background-color: #EECAF4;
+                    @extend .teal, .accent-4;
+                }
+                .rain-color-5 {
+                    width: 100%;
+                    height: 9px;
+                    @extend .amber, .accent-3;
                 }
                 &:last-child {
                     top: unset;
-                    bottom: 60px;
+                    bottom: 25px;
+                    @media (min-width: 480px) and (max-width: 767px) {
+                        bottom: 35px;
+                    }
                 }
             }
             li {
@@ -81,10 +92,16 @@
         .side-nav {      
             height: 100vh;
             padding-top: 60px;
+            @media (min-width: 1024px) {
+                display: none;
+            }
         }
     }
 }
 
 #sidenav-overlay {
     z-index: 900;
+    @media (min-width: 1024px) {
+        display: none;
+    }
 }
