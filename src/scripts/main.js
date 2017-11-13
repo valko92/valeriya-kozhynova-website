@@ -3,6 +3,9 @@ $(document).ready(function() {
     $('.cover').fadeOut();
 
     $(".button-collapse").sideNav();
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 5
+    });
 
     // scroll thru all letters, stop on needed one, also do same on letter hover
     var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];

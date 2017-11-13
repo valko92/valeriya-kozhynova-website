@@ -86,9 +86,9 @@
                     font-weight: 100;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                }
-                &:last-child a {
-                    padding-right: 0;
+                    &.active {
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
                 }
             }
         }
