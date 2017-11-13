@@ -3,6 +3,9 @@
         padding: 0 1em;
         transition: opacity 400ms ease-in-out, transform 300ms ease-in 200ms;
         @extend .purple, .lighten-2;
+        @media (min-width: 1366px) {
+            padding: 0 2em;
+        }
         &.slidedown {
             transform: translateY(0);
             opacity: 1;    
