@@ -1,5 +1,14 @@
 @import './node_modules/sanitize.scss/_sanitize.scss';
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
 /** Imports */
 @import 'materialize';
 @import '_home';

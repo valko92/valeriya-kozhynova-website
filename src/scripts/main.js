@@ -1,46 +1,68 @@
 $(document).ready(function() {
     console.log('javascript ready');
+    $('.cover').fadeOut();
 
     $(".button-collapse").sideNav();
 
     // scroll thru all letters, stop on needed one, also do same on letter hover
     var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    var times = 10;
 
-    function cycle($this, current, increment, alphabet, currentLet, stepTime) {
+    // cycle through random letters however many times "times" says then end up on the correct letter in the end
+    function cycle($this,  current, increment, alphabet, currentLet, stepTime) {
         var timer = setInterval(function() {
+            //$this.addClass('active');//
+            var rndLetter = Math.floor((Math.random() * 25));
+
             current += increment;
-            $this.html(alphabet[current]);
-            if ((alphabet[current] == currentLet) ||  (current == 25)) {
-                if (window.matchMedia("(max-width: 1024px)").matches) {
-                    clearInterval(timer);
-                    current = currentLet === 'A' ? 25: -1;
-                    setTimeout(function() {
-                        cycle($this, current, increment, alphabet, currentLet, stepTime)
-                    }, 10000);
-                } else {
-                    clearInterval(timer);
-                }
+
+            $this.html(alphabet[rndLetter]);
+
+            if (current == times) {
+                $this.html(currentLet);
+                //$this.removeClass('active');
+                clearInterval(timer);
+                current = 0;
+                setTimeout(function() {
+                    cycle($this, current, increment, alphabet, currentLet, stepTime)
+                }, 10000);
             }
         }, stepTime);
     }
 
-    // TODO:  Cycle thru a fixed number of random letters for all of them
     $('.changing-text span').each(function(i, v) {
-        var currentLet = $(this).html();  
         var $this = $(this);
-        var range = 25;
-        var current = currentLet === 'A' ? 25: -1;
-        var increment = range > current? 1 : -1;
-        var stepTime = Math.abs(Math.floor(3000 / range));
+
+        // start off name as all random letters
+        var rndLetter = Math.floor((Math.random() * 25));
+        $this.html(alphabet[rndLetter]);
+
+        var currentLet = $this.data('letter');  
+        
+        var range = times;
+        var current = 0;
+        var increment = 1;
+        var stepTime = Math.abs(Math.floor(800 / range));
         // initial cycle
         setTimeout(function() {
-            cycle($this, current, increment, alphabet, currentLet, stepTime);
-        }, 800*i);
+            cycle($this,  current, increment, alphabet, currentLet, stepTime);
+        }, 100*i);
 
         //loop cycle on hover
-        $(this).on('mouseover', function() {
-            var current = currentLet === 'A' ? 25: -1;
-            cycle($this, current, increment, alphabet, currentLet, stepTime);
+        $this.on('mouseover', function() {
+            var current = 0;
+        cycle($this, current, increment, alphabet, currentLet, stepTime);
         });
     });
+});
+
+// on scroll - see when body reaches top to slide down header
+$(document).on('scroll', function () {
+    var $nav = $('.navbar-fixed nav');
+
+    if ($('.body-container.row').offset().top - $(window).scrollTop() <= 100) {
+        $nav.addClass('slidedown');
+    } else {
+        $nav.removeClass('slidedown');
+    }
 });

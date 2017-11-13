@@ -1,3 +1,90 @@
-.navbar-fixed {
-    display: none;
+.navbar-fixed.custom-navbar {
+    nav {
+        padding: 0 3em;
+        transition: opacity 400ms ease-in-out, transform 300ms ease-in 200ms;
+        @extend .purple, .lighten-2;
+        &.slidedown {
+            transform: translateY(0);
+            opacity: 1;    
+        }
+        .brand-logo {
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            @media (max-width: 992px) {
+                left: calc(100% - 3em);
+                transform: translateX(0%);
+            }
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: inline;
+            }
+            @media (min-width: 1024px) {
+                .desktop {
+                    display: inline;
+                }
+                .mobile {
+                    display: none;
+                }    
+            }
+        }
+        ul {
+            .rainbow {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 9;
+                .rain-color-1 {
+                    width: 100%;
+                    height: 9px;
+                    @extend .orange, .accent-3;
+                }
+                .rain-color-2 {
+                    width: 100%;
+                    height: 9px;
+                    background-color: #9C43AB;
+                    
+                }
+                .rain-color-3 {
+                    width: 100%;
+                    height: 9px;
+                   background-color: #D696E1;
+                }
+                .rain-color-4 {
+                    width: 100%;
+                    height: 9px;
+                   background-color: #EECAF4;
+                }
+                &:last-child {
+                    top: unset;
+                    bottom: 60px;
+                }
+            }
+            li {
+                a {
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                &:last-child a {
+                    padding-right: 0;
+                }
+            }
+        }
+        .side-nav {      
+            height: 100vh;
+            padding-top: 60px;
+        }
+    }
+}
+
+#sidenav-overlay {
+    z-index: 900;
 }
