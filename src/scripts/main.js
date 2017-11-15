@@ -6,6 +6,9 @@ $(document).ready(function() {
     $('.scrollspy').scrollSpy({
         scrollOffset: 5
     });
+    $('.scrollspy-mobile').scrollSpy({
+        scrollOffset: 5
+    });
 
     // scroll thru all letters, stop on needed one, also do same on letter hover
     var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
@@ -57,6 +60,18 @@ $(document).ready(function() {
         cycle($this, current, increment, alphabet, currentLet, stepTime);
         });
     });
+
+    // stagger fade in cards b/c it looks sexy
+    var options = [
+        {selector: '#about-stagger', offset: 350, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#inner-about-stagger', offset: 10, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } }
+    ];
+    Materialize.scrollFire(options);
+
 });
 
 // on mobile orientation change, reload

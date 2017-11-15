@@ -41,6 +41,9 @@ Will deploy to an FTP server, either the usual way, or via Travis CI for testing
 
 # TODO:
 
+* fix the intro not getting hover actions (its behind the window section)
+* calculate scrollfire and stagger offset based on screen size
+
 ## website design ideas:
 
 * One page with scroll-to

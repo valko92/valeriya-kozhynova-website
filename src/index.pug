@@ -10,14 +10,66 @@ block styles
 
 block content
   include parts/intro
-  .body-container.row.section.scrollspy#about
-    h2 About
-  
-  .body-container.row.section.scrollspy#skills
-    h2 Skills
+  .body
+    .body-container.row.intro-window
+    .body-container.row.section.scrollspy-mobile.scrollspy#about
+      ul#about-stagger.row
+        li.col.s12
+          h2.section-title About
+          .rainbow.underline 
+            .rain-color-4
+            .rain-color-2
+            .rain-color-5
+        li.col.s10.offset-s2.m2.l1
+          .card.small.photo-card
+            .card-image
+              img(src='/assets/images/mev2.jpg' alt="Photo of Valeriya Kozhynova")
+        li.col.s10.offset-s2.m6.offset-m1
+          ul#inner-about-stagger
+            li.card.medium
+              .card-content
+                p.
+                  I am an experienced and well-rounded web developer interested in building secure, responsive, and scalable web sites and web apps. I am proficient in all stages of the web development process.
+            li.card.medium
+              .card-content
+                p.
+                  I am professionally experienced with website hosting and maintenance through Ubuntu Linux, Heroku,  and the  Amazon AWS suite.  I also have extensive knowledge  of SEO as well as experience with Google Analytics,  Google Tag Manager, Google Search Console, and HTML online advertising. 
+            li.card.medium
+              .card-content
+                p.
+                  Under DBOX and DBXD, I have built, developed and maintained over a dozen websites. With DBOX, I have developed the front-end for the 100 East 53rd Street website, which was showcased on both Site Inspire and Uplabs. At DBXD, I have developed websites for notable names in real estate such as Bay Park Centre, 432 Park Avenue, 108 Leonard, The Century Plaza, and The Residences at the West Hollywood Edition. 
+            li.card.medium
+              .card-content
+                p.
+                  Website development is my passion and I strive to build the greatest user experience using maintainable web solutions.  I always keep up to date with the rapidly changing technologies of the field and always look for ways to build upon and perfect my own knowledge.
+            li.card.medium
+              .card-content
+                .card-action
+                  a(href='https://www.linkedin.com/in/valeriyak/' target="_blank") More Information
 
-  .body-container.row.section.scrollspy#projects
-    h2 Projects
-  
-  .body-container.row.section.scrollspy#connect
-    h2 Connect
+    .body-container.row.section.scrollspy-mobile.scrollspy#skills
+      .row
+        .col.s12
+          h2.section-title Skills
+          .rainbow.underline 
+            .rain-color-4
+            .rain-color-2
+            .rain-color-5
+
+    .body-container.row.section.scrollspy-mobile.scrollspy#projects
+      .row
+        .col.s12
+          h2.section-title Projects
+          .rainbow.underline 
+            .rain-color-4
+            .rain-color-2
+            .rain-color-5
+    
+    .body-container.row.section.scrollspy-mobile.scrollspy#connect
+      .row
+        .col.s12
+          h2.section-title Connect
+          .rainbow.underline 
+            .rain-color-4
+            .rain-color-2
+            .rain-color-5

@@ -102,12 +102,12 @@ var localserver = () => {
   gulp.watch(PATHS.public, copy);
 
   // watch the build files and reload the browser if they change because of the previous changes
-  gulp.watch([`${PATHS.build}**/*.html`,`${PATHS.data}*.json`, `${PATHS.build}**/*.js`,`${PATHS.build}public/**/*`]).on('change', () => {
-      reload();
-  });
-  gulp.watch(`${PATHS.build}**/*.css`).on('change', () => {
-    reload('main.min.css', {stream: true});
-  });
+  // gulp.watch([`${PATHS.build}**/*.html`,`${PATHS.data}*.json`, `${PATHS.build}**/*.js`,`${PATHS.build}public/**/*`]).on('change', () => {
+  //     reload();
+  // });
+  // gulp.watch(`${PATHS.build}**/*.css`).on('change', () => {
+  //   reload('main.min.css', {stream: true});
+  // });
 };
 
 /** TASKS */
