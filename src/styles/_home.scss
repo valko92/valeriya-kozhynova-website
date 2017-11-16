@@ -169,13 +169,13 @@
 .body-container.row {
     width: 100%; min-height: 100vh;
     margin-bottom: 0;
-    padding: 64px 3em; padding-top: 8em;
+    padding: 64px 2em; padding-top: 8em;
     background-color: #FFF;
     position: relative;
     -webkit-overflow-scrolling: touch;
     z-index: 100;
     &#about {
-        margin-top: 100%;
+        margin-top: 100vh;
     }
     &.intro-window {
         background-color: transparent;
