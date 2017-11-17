@@ -1,6 +1,6 @@
 .contact-me {
     position: absolute;
-    bottom: 4em;
+    bottom: 5em;
     left: 50%;
     transform: translateX(-50%);
     z-index: 101;
@@ -13,6 +13,9 @@
     align-items: center;
     @media (min-width: 768px) {
         font-size: 2.1em;
+    }
+    @media (min-width: 1366px) {
+        bottom: 4em;
     }
     a {
         color: #FFF;
