@@ -7,16 +7,25 @@
     color: #FFF;
     font-size: 1.1em;
     font-weight: 100;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
     @media (min-width: 768px) {
         font-size: 2.1em;
     }
     a {
         color: #FFF;
+        display: block;
+        
         &:hover {
             @extend .amber-text, .accent-3;
         }
         &:active {
             @extend .teal-text, .accent-4;
+        }
+        &:small {
+            font-size: 0.5em;
         }
     }
 }
