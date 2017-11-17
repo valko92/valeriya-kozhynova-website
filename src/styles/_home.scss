@@ -1,3 +1,26 @@
+.contact-me {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: 100;
+    @media (min-width: 768px) {
+        font-size: 2.1em;
+    }
+    a {
+        color: #FFF;
+        &:hover {
+            @extend .amber-text, .accent-3;
+        }
+        &:active {
+            @extend .teal-text, .accent-4;
+        }
+    }
+}
+
 .container.row {
     width: 100%; height: 100vh;
     max-width: 100%;
