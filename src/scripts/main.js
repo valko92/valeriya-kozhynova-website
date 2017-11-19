@@ -69,13 +69,13 @@ $(document).ready(function() {
         {selector: '#inner-about-stagger', offset: 500, callback: function(el) {
             // Materialize.showStaggeredList($(el));
         } },
-        {selector: '#skills-stagger', offset: 500, callback: function(el) {
+        {selector: '#skills-stagger', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        {selector: '#inner-skills-stagger', offset: 500, callback: function(el) {
+        {selector: '#inner-skills-stagger', offset: 300, callback: function(el) {
             // Materialize.showStaggeredList($(el));
         } },
-        {selector: '#inner-skills-stagger', offset: 510, callback: function(el) {
+        {selector: '#inner-skills-stagger', offset: 310, callback: function(el) {
             // Materialize.showStaggeredList($(el));
         } }
     ];
