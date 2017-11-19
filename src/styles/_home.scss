@@ -240,3 +240,38 @@
         line-height: 32px;
     }
 }
+
+#projects-stagger li .card.medium {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 3em;
+    padding: 0;
+    &:hover {
+        .card-image {
+            background-size: auto 130%;
+        }
+    }
+    .card-image {
+        max-height: none;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        transition: all 400ms ease-out;
+        .card-title {
+            color: #000;
+            position: absolute;
+            padding: 0.5em;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+}

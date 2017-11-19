@@ -63,11 +63,8 @@ $(document).ready(function() {
 
     // stagger fade in cards b/c it looks sexy
     var options = [
-        {selector: '#about-stagger', offset: 500, callback: function(el) {
+        {selector: '#about-stagger', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
-        } },
-        {selector: '#inner-about-stagger', offset: 500, callback: function(el) {
-            // Materialize.showStaggeredList($(el));
         } },
         {selector: '#skills-stagger', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
