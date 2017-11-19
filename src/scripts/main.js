@@ -72,11 +72,8 @@ $(document).ready(function() {
         {selector: '#skills-stagger', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        {selector: '#inner-skills-stagger', offset: 300, callback: function(el) {
-            // Materialize.showStaggeredList($(el));
-        } },
-        {selector: '#inner-skills-stagger', offset: 310, callback: function(el) {
-            // Materialize.showStaggeredList($(el));
+        {selector: '#projects-stagger', offset: 310, callback: function(el) {
+            Materialize.showStaggeredList($(el));
         } }
     ];
     Materialize.scrollFire(options);
