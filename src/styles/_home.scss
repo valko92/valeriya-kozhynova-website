@@ -199,7 +199,9 @@
     }
 }
 
-#about-stagger, #inner-about-stagger {
+#about-stagger, #inner-about-stagger,
+#skills-stagger, #inner-skills-stagger,
+#ide-skills-stagger {
     li {
         opacity: 0;
     }
@@ -207,4 +209,34 @@
 
 #inner-about-stagger .card {
     height: auto;
+}
+
+.chip {
+    opacity: 0;
+    display: inline-block;
+    height: 44px;
+    font-size: 24px;
+    font-weight: 400;
+    @extend .purple-text, .lighten-2;
+    line-height: 42px;
+    padding: 0 17px;
+    border-radius: 22px;
+    background-color: #e4e4e4;
+    margin-bottom: 1EM;
+    margin-right: 1em;
+    margin-left: 1em;
+    &.p-chip {
+        color: #eee !important;
+        @extend .purple, .lighten-2;
+    }
+    &.medium {
+        font-size: 17px;
+        height: 36px;
+        line-height: 36px;
+    }
+    &.small {
+        font-size: 14px;
+        height: 32px;
+        line-height: 32px;
+    }
 }

@@ -63,11 +63,20 @@ $(document).ready(function() {
 
     // stagger fade in cards b/c it looks sexy
     var options = [
-        {selector: '#about-stagger', offset: -500, callback: function(el) {
+        {selector: '#about-stagger', offset: 500, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        {selector: '#inner-about-stagger', offset: -900, callback: function(el) {
+        {selector: '#inner-about-stagger', offset: 500, callback: function(el) {
+            // Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#skills-stagger', offset: 500, callback: function(el) {
             Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#inner-skills-stagger', offset: 500, callback: function(el) {
+            // Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#inner-skills-stagger', offset: 510, callback: function(el) {
+            // Materialize.showStaggeredList($(el));
         } }
     ];
     Materialize.scrollFire(options);
