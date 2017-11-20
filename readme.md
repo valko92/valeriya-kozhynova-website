@@ -41,6 +41,7 @@ Will deploy to an FTP server, either the usual way, or via Travis CI for testing
 
 # TODO:
 
-* design out project carousel - desktop and mobile
-* fill in projects info (w/ links)
+* PUG each list thru index's JSON file for other carousels
+    * make the btns work tho.
+    * fill in projects info
 
