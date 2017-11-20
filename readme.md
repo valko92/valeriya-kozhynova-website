@@ -44,10 +44,3 @@ Will deploy to an FTP server, either the usual way, or via Travis CI for testing
 * design out project carousel - desktop and mobile
 * fill in projects info (w/ links)
 
-## website design ideas:
-
-* One page with scroll-to
-* Name really big at top - if multipage - change into each page title ?
-    * super quick cycle through all letters and land on one u need
-* super simple spaceous white text on color BG w alternating black text and white bg strips
-

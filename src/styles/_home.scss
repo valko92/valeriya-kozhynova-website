@@ -280,6 +280,7 @@
     max-height: 90%;
     height: 90%;
     width: 90%;
+    display: block;
     .modal-close {
         position: absolute;
         top: 0; right: 0;
@@ -291,18 +292,68 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
+        @media (min-width: 1024px) {
+            flex-flow: row nowrap;
+        }
     }
 }
 
-.modal-content .images {
-    height: auto;
-    width: 100%;
-    img {
+.modal-content .info {
+    flex: 1 1 15%;
+    height: 100%;
+}
+.modal-content {
+    .carousel-wrapper {
+        flex: 1 1 80%;
         width: 100%;
-        height: auto;
-        margin: 1em auto;
+        height: 100%;
+        position: relative;
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: 100;
+            &:focus {
+                background: transparent;
+            }
+            &:hover {
+                background: transparent;
+                opacity: 0.8;
+            }
+            &:active {
+                background: transparent;
+                opacity: 0.5;
+            }
+            .material-icons {
+                @extend .purple-text, .lighten-2;
+            }
+            &.prev {
+                left: 1em;
+            }
+            &.next {
+                right: 1em;
+            }
+        }
+        .carousel {
+            flex: 1 1 80%;
+            width: 100%;
+            height: 100% !important;
+            .carousel-item {
+                img {
+                    width: auto;
+                    height: auto;
+                    max-height: 100%;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    display: block;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                }
+            }
+        }
     }
 }

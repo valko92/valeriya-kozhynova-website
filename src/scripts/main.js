@@ -82,6 +82,20 @@ $(document).ready(function() {
             endingTop: '4%',
         });
     });
+    $('.carousel.carousel-slider').each(function() {
+        $(this).carousel({
+            fullWidth: true, 
+            padding: 10, 
+            shift: 10, 
+            dist: 0
+        });
+        $(this).parent().find('.carousel-btn.prev').on('click', function() {
+            $(this).carousel('prev');
+        });
+        $(this).parent().find('.carousel-btn.next').on('click', function() {
+            $(this).carousel('next');
+        });
+    });
 });
 
 // on mobile orientation change, reload
