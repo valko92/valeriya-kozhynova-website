@@ -75,6 +75,13 @@ $(document).ready(function() {
     ];
     Materialize.scrollFire(options);
 
+
+    $('.modal').each(function() {
+        $(this).modal({
+            startingTop: '4%',
+            endingTop: '4%',
+        });
+    });
 });
 
 // on mobile orientation change, reload

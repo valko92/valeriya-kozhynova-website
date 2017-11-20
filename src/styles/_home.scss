@@ -275,3 +275,34 @@
         }
     }
 }
+
+.modal {
+    max-height: 90%;
+    height: 90%;
+    width: 90%;
+    .modal-close {
+        position: absolute;
+        top: 0; right: 0;
+        left: unset; bottom: unset;
+        margin: 1em;
+    }
+    .modal-content {
+        padding-top: 4em;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.modal-content .images {
+    height: auto;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        margin: 1em auto;
+    }
+}

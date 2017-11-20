@@ -104,7 +104,7 @@ block content
 
 
   .body-container.row.section.scrollspy-mobile.scrollspy#projects
-     ul#projects-stagger.row
+    ul#projects-stagger.row
       li.col.s12
         h2.section-title Projects
         .rainbow.underline 
@@ -113,25 +113,29 @@ block content
           .rain-color-5
       li.col.s12.m6.l3
         .card.medium.photo-card
-          button.card-image.waves-effect.waves-light(style='background-image: url(/assets/images/100e53/desktop/desktop_home.png);' title="100 east 53rd street")
+          a.modal-trigger.card-image.waves-effect.waves-light(href="#100e53" style='background-image: url(/assets/images/100e53/desktop/desktop_home.png);' title="100 east 53rd street")
             span.card-title 100 East 53rd Street
       li.col.s12.m6.l3 
         .card.medium.photo-card
-          button.card-image.waves-effect.waves-light(style='background-image: url(/assets/images/432ParkAvenue/desktop/home.png);' title="432 Park Avenue")
+          a.modal-trigger.card-image.waves-effect.waves-light(href="#432parkavenue" style='background-image: url(/assets/images/432ParkAvenue/desktop/home.png);' title="432 Park Avenue")
             span.card-title 432 Park Avenue
       li.col.s12.m6.l3 
         .card.medium.photo-card
-          button.card-image.waves-effect.waves-light(style='background-image: url(/assets/images/BayParkCentre/desktop/home.png);' title="Bay Park Centre")
+          a.modal-trigger.card-image.waves-effect.waves-light(href="#bayparkcentre" style='background-image: url(/assets/images/BayParkCentre/desktop/home.png);' title="Bay Park Centre")
             span.card-title Bay Park Centre
       li.col.s12.m6.l3 
         .card.medium.photo-card
-          button.card-image.waves-effect.waves-light(style='background-image: url(/assets/images/CenturyPlaza/desktop/2.png);' title="The Century Plaza")
+          a.modal-trigger.card-image.waves-effect.waves-light(href="#thecenturyplaza" style='background-image: url(/assets/images/CenturyPlaza/desktop/2.png);' title="The Century Plaza")
             span.card-title The Century Plaza
       li.col.s12.m6.l3 
         .card.medium.photo-card
-          button.card-image.waves-effect.waves-light(style='background-image: url(/assets/images/108Leonard/desktop/3.png);' title="108 Leonard")
+          a.modal-trigger.card-image.waves-effect.waves-light(href="#108leonard" style='background-image: url(/assets/images/108Leonard/desktop/3.png);' title="108 Leonard")
             span.card-title 108 Leonard
-  
+  include parts/100e53
+  include parts/432parkavenue
+  include parts/bayparkcentre
+  include parts/thecenturyplaza
+  include parts/108leonard
   
   .body-container.row.section.scrollspy-mobile.scrollspy#connect
     .row

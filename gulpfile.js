@@ -105,9 +105,9 @@ var localserver = () => {
   // gulp.watch([`${PATHS.build}**/*.html`,`${PATHS.data}*.json`, `${PATHS.build}**/*.js`,`${PATHS.build}public/**/*`]).on('change', () => {
   //     reload();
   // });
-  gulp.watch(`${PATHS.build}**/*.html`).on('change', () => {
-    reload();
-  });
+  // gulp.watch(`${PATHS.build}**/*.html`).on('change', () => {
+  //   reload();
+  // });
 };
 
 /** TASKS */
