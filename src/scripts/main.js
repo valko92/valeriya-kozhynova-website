@@ -71,6 +71,9 @@ $(document).ready(function() {
         } },
         {selector: '#projects-stagger', offset: 310, callback: function(el) {
             Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#connect-stagger', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
         } }
     ];
     Materialize.scrollFire(options);

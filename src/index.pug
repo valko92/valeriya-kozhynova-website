@@ -123,7 +123,7 @@ block content
   //- Projects Carousel Modal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   each project in projects
     div.modal.show(id=project.slug)
-      a.modal-action.modal-close.waves-effect.waves-orange.btn-flat.right(href="#!") CLOSE
+      button.modal-action.modal-close.btn-floating.waves-effect.waves-light.orange.btn-flat.right: i.medium.material-icons close
       div.modal-content
           .info
               h4 #{project.title}
@@ -142,12 +142,18 @@ block content
               button.next.carousel-btn
                   i.medium.material-icons chevron_right
 
-  //- CONTACT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  //- CONNECT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   .body-container.row.section.scrollspy-mobile.scrollspy#connect
-    .row
-      .col.s12
+    ul#connect-stagger.row
+      li.col.s12
         h2.section-title Connect
         .rainbow.underline 
           .rain-color-4
           .rain-color-2
           .rain-color-5
+      li.col.s12.m10.offset-m1
+        ul#inner-connect-stagger
+          li: a.btn-floating.orange.waves-effect.waves-light(href="https://www.linkedin.com/in/valeriyak/" target="_blank"): i.fa.fa-linkedin.fa-3x(aria-hidden="true")
+          li: a.btn-floating.orange.waves-effect.waves-light(href="https://github.com/valko92" target="_blank"): i.fa.fa-github.fa-3x(aria-hidden="true")
+          li: a.btn-floating.orange.waves-effect.waves-light(href="https://twitter.com/Epp3s" target="_blank"): i.fa.fa-twitter.fa-3x(aria-hidden="true")
+          li: a.btn-floating.orange.waves-effect.waves-light(href="https://www.facebook.com/valko5" target="_blank"): i.fa.fa-facebook.fa-3x(aria-hidden="true")

@@ -27,7 +27,7 @@ const PATHS = {
 
 /** PUG -> HTML */
 var html = () => {
-  return gulp.src(`${PATHS.src}**/*.pug`)
+  return gulp.src(`${PATHS.src}/*.pug`)
     .pipe(data((file) => {
       if (fs.existsSync(`${PATHS.data}${path.basename(file.path)}.json`)) {
         return JSON.parse(fs.readFileSync(`${PATHS.data}${path.basename(file.path)}.json`));
