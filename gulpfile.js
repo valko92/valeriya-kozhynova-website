@@ -36,7 +36,6 @@ var html = () => {
     .pipe(pug())
     .on('error', (err) => {
       process.stderr.write(`${err.message}\n`);
-      this.emit('end');
     })
     .pipe(rename(function (file) {
       if (`${file.basename}${file.extname}` === 'index.html') {

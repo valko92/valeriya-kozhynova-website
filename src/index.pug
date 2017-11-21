@@ -10,6 +10,8 @@ block styles
 
 block content
   include parts/intro
+
+  //- ABOUT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   .body-container.row.section.scrollspy-mobile.scrollspy#about
     ul#about-stagger.row
       li.col.s12
@@ -45,6 +47,7 @@ block content
               .card-action
                 a(href='https://www.linkedin.com/in/valeriyak/' target="_blank") More Information
 
+  //- SKILLS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   .body-container.row.section.scrollspy-mobile.scrollspy#skills
     ul#skills-stagger.row
       li.col.s12
@@ -102,7 +105,7 @@ block content
           li.chip.p-chip Terminal/BASH
 
 
-
+  //- PROJECTS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   .body-container.row.section.scrollspy-mobile.scrollspy#projects
     ul#projects-stagger.row
       li.col.s12
@@ -111,32 +114,35 @@ block content
           .rain-color-4
           .rain-color-2
           .rain-color-5
-      li.col.s12.m6.l3
-        .card.medium.photo-card
-          a.modal-trigger.card-image.waves-effect.waves-light(href="#100e53" style='background-image: url(/assets/images/100e53/desktop/desktop_home.png);' title="100 east 53rd street")
-            span.card-title 100 East 53rd Street
-      li.col.s12.m6.l3 
-        .card.medium.photo-card
-          a.modal-trigger.card-image.waves-effect.waves-light(href="#432parkavenue" style='background-image: url(/assets/images/432ParkAvenue/desktop/home.png);' title="432 Park Avenue")
-            span.card-title 432 Park Avenue
-      li.col.s12.m6.l3 
-        .card.medium.photo-card
-          a.modal-trigger.card-image.waves-effect.waves-light(href="#bayparkcentre" style='background-image: url(/assets/images/BayParkCentre/desktop/home.png);' title="Bay Park Centre")
-            span.card-title Bay Park Centre
-      li.col.s12.m6.l3 
-        .card.medium.photo-card
-          a.modal-trigger.card-image.waves-effect.waves-light(href="#thecenturyplaza" style='background-image: url(/assets/images/CenturyPlaza/desktop/2.png);' title="The Century Plaza")
-            span.card-title The Century Plaza
-      li.col.s12.m6.l3 
-        .card.medium.photo-card
-          a.modal-trigger.card-image.waves-effect.waves-light(href="#108leonard" style='background-image: url(/assets/images/108Leonard/desktop/3.png);' title="108 Leonard")
-            span.card-title 108 Leonard
-  include parts/100e53
-  include parts/432parkavenue
-  include parts/bayparkcentre
-  include parts/thecenturyplaza
-  include parts/108leonard
-  
+      each project in projects
+        li.col.s12.m6.l3
+          .card.medium.photo-card
+            a.modal-trigger.card-image.waves-effect.waves-light(href="#"+project.slug style='background-image: url('+project.image+');' title=project.title)
+              span.card-title #{project.title}
+
+  //- Projects Carousel Modal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  each project in projects
+    div.modal.show(id=project.slug)
+      a.modal-action.modal-close.waves-effect.waves-orange.btn-flat.right(href="#!") CLOSE
+      div.modal-content
+          .info
+              h4 #{project.title}
+              a(href=project.url target="_blank") #{project.url}
+              p #{project.tools}
+              p.
+                  !{project.description}   
+          .carousel-wrapper
+              .carousel.carousel-slider#100e53-carousel
+                each image in project.images
+                    .carousel-item
+                        img(src=image.url alt=image.alt)
+                          
+              button.prev.carousel-btn
+                  i.medium.material-icons chevron_left
+              button.next.carousel-btn
+                  i.medium.material-icons chevron_right
+
+  //- CONTACT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   .body-container.row.section.scrollspy-mobile.scrollspy#connect
     .row
       .col.s12

@@ -83,26 +83,31 @@ $(document).ready(function() {
         });
     });
     $('.carousel.carousel-slider').each(function() {
-        $(this).carousel({
+        var $this = $(this);
+        $this.carousel({
             fullWidth: true, 
             padding: 10, 
             shift: 10, 
             dist: 0
         });
-        $(this).parent().find('.carousel-btn.prev').on('click', function() {
-            $(this).carousel('prev');
+        $this.parent().find('.carousel-btn.prev').on('click', function() {
+            $this.carousel('prev');
         });
-        $(this).parent().find('.carousel-btn.next').on('click', function() {
-            $(this).carousel('next');
+        $this.parent().find('.carousel-btn.next').on('click', function() {
+            $this.carousel('next');
+        });
+
+        $(window).on('orientationchange', function() {
+            $this.carousel('destroy');
+            $this.carousel({
+                fullWidth: true, 
+                padding: 10, 
+                shift: 10, 
+                dist: 0
+            });
         });
     });
 });
-
-// on mobile orientation change, reload
-$(window).on('orientationchange', function() {
-    location.reload();
-});
-
 
 // on scroll - see when body reaches top to slide down header
 $(document).on('scroll', function () {

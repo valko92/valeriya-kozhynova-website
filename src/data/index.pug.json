@@ -1,3 +1,178 @@
 {
-  "hello": "World"
+  "projects": [
+    {
+      "title": "100 East 53rd Street",
+      "slug": "100e53",
+      "url": "https://100e53.com",
+      "tools": "Meteor JS Framework, SASS, Docker, TravisCI, AWS EC2",
+      "description": "While at DBOX, I developed the front-end for the 100 East 53rd Street website. This website was showcased on <a href='https://www.siteinspire.com/websites/6391-one-hundred-east-fifty-third-street' target='_blan'>Site Inspire</a> in the typographic style category as well as on <a href='https://www.uplabs.com/posts/100-east-53rd-street-gallery-interface' target='_blank'>Uplabs</a> for its Gallery interface.",
+      "image":"/assets/images/100e53/desktop/desktop_home.png",
+      "images": [
+        {
+          "url": "/assets/images/100e53/desktop/desktop_home.png",
+          "alt": "100e53 desktop home page"
+        },{
+          "url": "/assets/images/100e53/desktop/desktop_multi_language_support.png",
+          "alt": "100e53 multiple language support"
+        },{
+          "url": "/assets/images/100e53/desktop/desktop_subpage.png",
+          "alt": "100e53 desktop page"
+        },{
+          "url": "/assets/images/100e53/desktop/desktop_neighborhood.png",
+          "alt": "100e53 desktop neighborhood page"
+        },{
+          "url": "/assets/images/100e53/desktop/desktop_views_panorama.png",
+          "alt": "100e53 panoramic views page"
+        },{
+          "url": "/assets/images/100e53/mobile/mobile_home.png",
+          "alt": "100e53 mobile version home page"
+        },{
+          "url": "/assets/images/100e53/mobile/mobile_category.png",
+          "alt": "100e53 mobile category page"
+        },{
+          "url": "/assets/images/100e53/mobile/mobile_availability.png",
+          "alt": "100e53 mobile availability page"
+        },{
+          "url": "/assets/images/100e53/mobile/mobile_floorplan.png",
+          "alt": "100e53 mobile floorplan page"
+        },{
+          "url": "/assets/images/100e53/mobile/mobile_map.png",
+          "alt": "100e53 mobile neighborhood map page"
+        }
+      ]
+    },{
+      "title": "108 Leonard",
+      "slug": "108leonard",
+      "url": "https://108leonard.com",
+      "tools": "PUG, SCSS, JavaScript, Gulp, Node.JS, TravisCI, AWS EC2",
+      "description": "I developed this \"teaser\" site at DBXD. The website's main focus is typography and animation. The form has client-side validation and uses Google i18n Libphonenumber to populate and convert country to phone number country code.",
+      "image":"/assets/images/108Leonard/desktop/3.png",
+      "images": [
+        {
+          "url": "/assets/images/108Leonard/desktop/1.png",
+          "alt": "108leonard desktop home page"
+        },{
+          "url": "/assets/images/108Leonard/desktop/2.png",
+          "alt": "108 Leonard desktop text fade out"
+        },{
+          "url": "/assets/images/108Leonard/desktop/3.png",
+          "alt": "108 Leonard building image fade in"
+        },{
+          "url": "/assets/images/108Leonard/desktop/4.png",
+          "alt": "108 Leonard form"
+        },{
+          "url": "/assets/images/108Leonard/mobile/1.png",
+          "alt": "108 Leonard mobile home page"
+        }
+      ]
+    },{
+      "title": "432 Park Avenue",
+      "slug": "432parkavenue",
+      "url": "http://www.432parkavenue.com/",
+      "tools": "Assemble.io, Grunt, SCSS, JavaScript, Node.JS, TravisCI, AWS EC2",
+      "description": "This is a new, complete redesign of the 432 Park Avenue website I did while at DBXD. It has a split-screen desktop design where the text and images move independently of each other via mouse scroll. The website uses JavaScript DOM manipulation to switch to a completely different, top-down scrolling mobile design.",
+      "image":"/assets/images/432ParkAvenue/desktop/home.png",
+      "images": [
+        {
+          "url": "/assets/images/432ParkAvenue/desktop/home.png",
+          "alt": "432 Park Avenue home page"
+        },{
+          "url": "/assets/images/432ParkAvenue/desktop/full.png",
+          "alt": "432 Park Avenue full width image"
+        },{
+          "url": "/assets/images/432ParkAvenue/desktop/full2.png",
+          "alt": "432 Park Avenue full width image slid out"
+        },{
+          "url": "/assets/images/432ParkAvenue/desktop/Press.png",
+          "alt": "432 Park Avenue press page"
+        },{
+          "url": "/assets/images/432ParkAvenue/desktop/availability.png",
+          "alt": "432 Park Avenue availability page"
+        },{
+          "url": "/assets/images/432ParkAvenue/mobile/home.png",
+          "alt": "432 Park Avenue mobile home page"
+        },{
+          "url": "/assets/images/432ParkAvenue/mobile/full.png",
+          "alt": "432 Park Avenue mobile full width image"
+        },{
+          "url": "/assets/images/432ParkAvenue/mobile/full2.png",
+          "alt": "432 Park Avenue mobile full width image sliding overlay"
+        },{
+          "url": "/assets/images/432ParkAvenue/mobile/menu.png",
+          "alt": "432 Park Avenue mobile menu"
+        },{
+          "url": "/assets/images/432ParkAvenue/mobile/press.png",
+          "alt": "432 Park Avenue mobile press page"
+        }
+      ]
+    },{
+      "title": "The Century Plaza",
+      "slug": "thecenturyplaza",
+      "url": "https://www.thecenturyplaza.com/",
+      "tools": "PUG, SCSS, JavaScript, Neat, Node.JS, TravisCI, AWS EC2",
+      "description": "This is a \"teaser\" site for The Century Plaza I have developed at DBXD.  It doesn't use any task runners such as Gulp or Grunt, but rather relies on npm scripts to minify and compile. The website's second page contains a PDF deconstructed into an online flipbook.",
+      "image":"/assets/images/CenturyPlaza/desktop/1.png",
+      "images": [
+        {
+          "url": "/assets/images/CenturyPlaza/desktop/1.png",
+          "alt": "Century Plaza intro day"
+        },{
+          "url": "/assets/images/CenturyPlaza/desktop/2.png",
+          "alt": "Century Plaza intro night"
+        },{
+          "url": "/assets/images/CenturyPlaza/desktop/3.png",
+          "alt": "Century Plaza intro text"
+        },{
+          "url": "/assets/images/CenturyPlaza/desktop/4.png",
+          "alt": "Century plaza form"
+        },{
+          "url": "/assets/images/CenturyPlaza/desktop/5.png",
+          "alt": "Century Plaza online pdf flipbook"
+        },{
+          "url": "/assets/images/CenturyPlaza/mobile/1.png",
+          "alt": "Century Plaza mobile intro night"
+        },{
+          "url": "/assets/images/CenturyPlaza/mobile/2.png",
+          "alt": "Century Plaza form validation"
+        },{
+          "url": "/assets/images/CenturyPlaza/mobile/3.png",
+          "alt": "Century Plaza mobile intro text"
+        }
+      ]
+    },{
+      "title": "Bay Park Centre",
+      "slug": "bayparkcentre",
+      "url": "http://www.bayparkcentre.com/",
+      "tools": "Jekyll, SCSS, Grunt, Ruby, Node.JS, TravisCI, AWS EC2",
+      "description": "A website I developed at DBXD, it uses a modular approach to Jekyll with JSON data for scalable content creation and Pano2VR for panoramic views. It also utilizes many play-on-scroll inline videos and hooks into Google Spreadsheets for press content.",
+      "image":"/assets/images/BayParkCentre/desktop/home.png",
+      "images": [
+        {
+          "url": "/assets/images/BayParkCentre/desktop/home.png",
+          "alt": "Bay Park Centre desktop home page"
+        },{
+          "url": "/assets/images/BayParkCentre/desktop/Testfits.png",
+          "alt": "Bay Park Centre interactive test fits page"
+        },{
+          "url": "/assets/images/BayParkCentre/desktop/views.png",
+          "alt": "Bay Park Centre Pano2VR views page"
+        },{
+          "url": "/assets/images/BayParkCentre/mobile/home.png",
+          "alt": "Bay Park Centre mobile home page"
+        },{
+          "url": "/assets/images/BayParkCentre/mobile/home1.png",
+          "alt": "Bay Park Centre mobile home page 2"
+        },{
+          "url": "/assets/images/BayParkCentre/mobile/menu.png",
+          "alt": "Bay Park Centre mobile menu"
+        },{
+          "url": "/assets/images/BayParkCentre/mobile/testfits.png",
+          "alt": "Bay Park Centre mobile test fits page"
+        },{
+          "url": "/assets/images/BayParkCentre/mobile/testfits2.png",
+          "alt": "Bay Park Centre mobile test fits page 2"
+        }
+      ]
+    }
+  ]
 }
