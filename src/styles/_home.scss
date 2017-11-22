@@ -356,7 +356,6 @@
         flex: 1 1 80%;
         width: 100%;
         height: 100% !important;
-        transition: all 300ms ease-in-out;
         &.fullscreen {
             position: fixed;
             width: 100%; height: 100%;
@@ -405,4 +404,17 @@
     li {
         margin: 1em;
     }
+}
+
+.bombs {
+    margin: 0 auto;
+    width: 62px;
+    height: 64px;
+    background-image: url("/assets/images/bombs.png");
+    animation: playb .8s steps(3) infinite;
+}
+
+@keyframes playb {
+    from { background-position:    0px; }
+    to { background-position: -192px; }
 }
