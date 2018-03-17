@@ -44,25 +44,37 @@
       "title": "108 Leonard",
       "slug": "108leonard",
       "url": "https://108leonard.com",
-      "tools": "PUG, SCSS, JavaScript, Gulp, Node.JS, TravisCI, AWS EC2",
-      "description": "I developed this \"teaser\" site at DBXD. The website's main focus is typography and animation. The form has client-side validation and uses Google i18n Libphonenumber to populate and convert country to phone number country code.",
+      "tools": "ReactJS, Node.JS, TravisCI, AWS EC2",
+      "description": "I developed this website at DBXD. The website's main focus is typography and simple animation. The form has client-side validation and uses Google i18n Libphonenumber to populate and convert country to phone number country code.",
       "image":"/assets/images/108Leonard/desktop/3.png",
       "images": [
         {
-          "url": "/assets/images/108Leonard/desktop/1.png",
+          "url": "/assets/images/108Leonard/desktop/fullsite_home.jpg",
           "alt": "108leonard desktop home page"
         },{
-          "url": "/assets/images/108Leonard/desktop/2.png",
-          "alt": "108 Leonard desktop text fade out"
+          "url": "/assets/images/108Leonard/desktop/fullsite_building.jpg",
+          "alt": "108 Leonard desktop building page"
         },{
-          "url": "/assets/images/108Leonard/desktop/3.png",
-          "alt": "108 Leonard building image fade in"
+          "url": "/assets/images/108Leonard/desktop/fullsite_avail.jpg",
+          "alt": "108 Leonard availability page"
         },{
-          "url": "/assets/images/108Leonard/desktop/4.png",
-          "alt": "108 Leonard form"
+          "url": "/assets/images/108Leonard/desktop/fullsite_team.jpg",
+          "alt": "108 Leonard team page"
         },{
-          "url": "/assets/images/108Leonard/mobile/1.png",
+          "url": "/assets/images/108Leonard/mobile/fullsite_building.jpg",
           "alt": "108 Leonard mobile home page"
+        }, {
+          "url": "/assets/images/108Leonard/mobile/fullsite_residences.jpg",
+          "alt": "108 Leonard mobile residences page"
+        }, {
+          "url": "/assets/images/108Leonard/mobile/fullsite_avail.jpg",
+          "alt": "108 Leonard mobile availability page"
+        }, {
+          "url": "/assets/images/108Leonard/mobile/fullsite_floorplan.jpg",
+          "alt": "108 Leonard mobile availability floorplan overlay"
+        }, {
+          "url": "/assets/images/108Leonard/mobile/fullsite_contact.jpg",
+          "alt": "108 Leonard mobile contact page"
         }
       ]
     },{
