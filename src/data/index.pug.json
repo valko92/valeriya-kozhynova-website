@@ -189,8 +189,8 @@
       "title": "The Residences at the West Hollywood Edition",
       "slug": "wehoeditionresidences",
       "url": "https://www.wehoeditionresidences.com/",
-      "tools": "PUG, SCSS, Neat, Velocity, Gulp, Node.JS, TravisCI, AWS S3 with CloudFront",
-      "description": "A website I developed at DBOX and DBXD. It is a full, multiplage site, featuring hijacked scrolling on desktop and a seamless scrolling experience on mobile. The availability page features JavaScript writing to the DOM, and sorting residences. The home page has videos that appear on hover over links.",
+      "tools": "PUG, SCSS, Neat, Velocity, Google Maps API, Gulp, Node.JS, TravisCI, AWS S3 with CloudFront",
+      "description": "A website I developed at DBOX and DBXD. It is a full, multipage site, featuring hijacked scrolling on desktop and a seamless scrolling experience on mobile. The availability page features JavaScript writing to the DOM, and sorting residences. The home page has videos that appear on hover over links. And the Location page features an interactive Google Maps API-powered neighborhood map.",
       "image":"/assets/images/WeHoEditionResidences/desktop/1.png",
       "images": [
         {
