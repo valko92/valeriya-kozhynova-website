@@ -185,6 +185,64 @@
           "alt": "Bay Park Centre mobile test fits page 2"
         }
       ]
+    },{
+      "title": "The Residences at the West Hollywood Edition",
+      "slug": "wehoeditionresidences",
+      "url": "https://www.wehoeditionresidences.com/",
+      "tools": "PUG, SCSS, Neat, Velocity, Gulp, Node.JS, TravisCI, AWS S3 with CloudFront",
+      "description": "A website I developed at DBOX and DBXD. It is a full, multiplage site, featuring hijacked scrolling on desktop and a seamless scrolling experience on mobile. The availability page features JavaScript writing to the DOM, and sorting residences. The home page has videos that appear on hover over links.",
+      "image":"/assets/images/WeHoEditionResidences/desktop/1.png",
+      "images": [
+        {
+          "url": "/assets/images/WeHoEditionResidences/desktop/1.png",
+          "alt": "Weho Edition Residences desktop home page with Residences page hover state"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/2.png",
+          "alt": "Weho Edition Residences desktop home page with Location page hover state"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/3.png",
+          "alt": "Weho Edition Residences desktop home page with no hover state"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/4.png",
+          "alt": "Weho Edition Residences desktop availability page"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/5.png",
+          "alt": "Weho Edition Residences desktop availability page with floorplan accordion"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/6.png",
+          "alt": "Weho Edition Residences desktop contact form with validation"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/7.png",
+          "alt": "Weho Edition Residences desktop residences page"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/8.png",
+          "alt": "Weho Edition Residences desktop residences page text"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/9.png",
+          "alt": "Weho Edition Residences desktop residence page image"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/10.png",
+          "alt": "Weho Edition Residences desktop team page"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/desktop/11.png",
+          "alt": "Weho Edition Residences desktop team page further down"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/mobile/1.png",
+          "alt": "Weho Edition Residences mobile home page"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/mobile/2.png",
+          "alt": "Weho Edition Residences mobile residences page"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/mobile/3.png",
+          "alt": "Weho Edition Residences mobile residences page further down"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/mobile/4.png",
+          "alt": "Weho Edition Residences mobile availability page"
+        },{
+          "url": "/assets/images/WeHoEditionResidences/mobile/5.png",
+          "alt": "Weho Edition Residences mobile availability page with floorplan accordion"
+        }
+      ]
     }
   ]
 }
